@@ -20,12 +20,12 @@ class AppStorage {
 
     getToken() {
         // eslint-disable-next-line no-undef
-        localStorage.getItem(token);
+        localStorage.getItem("token");
     }
 
     getUser() {
         // eslint-disable-next-line no-undef
-        localStorage.getItem(user);
+        localStorage.getItem("user");
     }
 }
 

@@ -9,12 +9,16 @@ Vue.use(VueRouter);
 import User from "./helpers/User";
 window.User = User;
 
+Vue.prototype.User = window.User;
+
 // Import Notification Class
 import Notification from "./helpers/Notification";
 window.Notification = Notification;
 
 import Swal from "sweetalert2";
 window.Swal = Swal;
+
+Vue.prototype.Swal = window.Swal;
 
 const Toast = Swal.mixin({
     toast: true,
@@ -29,6 +33,7 @@ const Toast = Swal.mixin({
 });
 
 window.Toast = Toast;
+Vue.prototype.Toast = window.Toast;
 
 Vue.config.productionTip = false;
 
