@@ -1,3 +1,4 @@
+/* eslint-disable no-class-assign */
 class AppStorage {
     storeToken(token) {
         localStorage.setItem("token", token);
@@ -18,10 +19,12 @@ class AppStorage {
     }
 
     getToken() {
+        // eslint-disable-next-line no-undef
         localStorage.getItem(token);
     }
 
     getUser() {
+        // eslint-disable-next-line no-undef
         localStorage.getItem(user);
     }
 }

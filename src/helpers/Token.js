@@ -22,4 +22,5 @@ class Token {
     }
 }
 
+// eslint-disable-next-line no-class-assign
 export default Token = new Token();

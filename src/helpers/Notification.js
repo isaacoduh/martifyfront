@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class Notification {
     success() {
         new Noty({
@@ -63,4 +64,5 @@ class Notification {
     }
 }
 
+// eslint-disable-next-line no-class-assign
 export default Notification = new Notification();

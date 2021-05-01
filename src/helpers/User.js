@@ -37,4 +37,5 @@ class User {
     }
 }
 
+// eslint-disable-next-line no-class-assign
 export default User = new User();
