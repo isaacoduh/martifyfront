@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <navbar />
+    <div v-if="loggedIn">
+      <navbar />
+    </div>
+
     <router-view></router-view>
   </div>
 </template>
@@ -13,13 +16,15 @@ export default {
   },
   created() {
     if (!this.User.loggedIn()) {
-      this.$router.push({ name: "/login" });
+      this.$router.push({ name: "/" });
     } else {
       this.user.name = this.User.name();
+      this.loggedIn = true;
     }
   },
   data() {
     return {
+      loggedIn: false,
       user: {},
     };
   },
