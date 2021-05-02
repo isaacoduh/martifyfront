@@ -108,7 +108,7 @@ export default {
         .then((res) => {
           this.User.responseAfterLogin(res);
           this.Toast.fire({
-            icon: "Success",
+            icon: "success",
             title: "Sign In Successful!",
           });
           this.$router.push({ name: "home" });

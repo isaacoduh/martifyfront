@@ -8,7 +8,7 @@ export default {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     this.Toast.fire({
-      icon: "Success",
+      icon: "success",
       title: "logout successful",
     });
     this.$router.push({ name: "/" });

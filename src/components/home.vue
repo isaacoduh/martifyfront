@@ -5,10 +5,6 @@
     <div v-if="this.user != null">
       <h6>{{ this.user.name }}</h6>
     </div>
-
-    <router-link to="/logout" class="font-weight-bold text-small"
-      >Logout</router-link
-    >
   </div>
 </template>
 

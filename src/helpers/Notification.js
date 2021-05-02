@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+import Noty from "noty";
 class Notification {
     success() {
         new Noty({
