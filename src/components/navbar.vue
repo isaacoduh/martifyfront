@@ -35,12 +35,58 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="#">Employees</a>
+                  <a class="dropdown-item" href="/category">Employees</a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <router-link class="dropdown-item" to="/store-employee"
                     >Add Employee</router-link
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manage Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/category">Categories</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <router-link class="dropdown-item" to="/store-category"
+                    >Add Category</router-link
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manage Customers
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/customer">Customers</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <router-link class="dropdown-item" to="/store-customer"
+                    >Add Customer</router-link
                   >
                 </li>
               </ul>
