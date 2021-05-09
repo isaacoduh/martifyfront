@@ -20,6 +20,11 @@ let storecustomer = require("./components/customer/create.vue").default;
 let customer = require("./components/customer/index.vue").default;
 let editcustomer = require("./components/customer/edit.vue").default;
 
+// Supplier Component
+let storesupplier = require("./components/supplier/create.vue").default;
+let supplier = require("./components/supplier/index.vue").default;
+let editsupplier = require("./components/supplier/edit.vue").default;
+
 export const routes = [
     { path: "/", component: login, name: "/" },
     { path: "/register", component: register, name: "register" },
@@ -54,5 +59,14 @@ export const routes = [
         path: "/edit-customer/:id",
         component: editcustomer,
         name: "edit-customer",
+    },
+
+    // Supplier Routes
+    { path: "/store-supplier", component: storesupplier, name: "store-supplier" },
+    { path: "/supplier", component: supplier, name: "supplier" },
+    {
+        path: "/edit-supplier/:id",
+        component: editsupplier,
+        name: "edit-supplier",
     },
 ];
